@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css" >
+</head>
+<body>
+
+    <div class="wrapper">
+        <div id="header">
+            <a class="logo" href="">登录豆瓣</a>
+        </div>
+        <div id="content">
+            <h1>登录豆瓣</h1>
+            <div class="article">
+              <form id="lzform" name="lzform" action="" method="post" onsubmit="return validateForm(this);">
+                <div class="item-right">
+                    <a href="">手机验证码登录</a>
+                </div>
+                <div class="item">
+                    <label>帐号</label>
+                    <input id="email" class="basic-input" maxlength="60" type="text" name="form_email" value="邮箱/手机号/用户名" tabindex="1" style="color: rgb(204, 204, 204);font-weight: 100">
+                </div>
+                <div class="item">
+                    <label>密码</label>
+                    <input id="password" class="basic-input" maxlength="20" type="password" name="form_password" tabindex="2">
+                    <span id="form_pass_error" class="error-top" style="display: inline"></span>
+                </div>
+                <div class="item">
+                    <label>&nbsp;</label>
+                    <p class="remember">
+                        <input id="remember" type="checkbox" name="remember" tabindex="4">
+                        <label class="remember" for="remember">下次自动登录</label>
+                        |
+                        <a href="">忘记密码了</a>
+                    </p>
+                </div>
+                <div class="item">
+                    <label>&nbsp;</label>
+                    <input class="btn-submit" value="登录" name="login" tabindex="5" type="submit">
+                </div>
+                <div class="item item-3rd">
+                    <label>第三方登录：</label>
+                    <a class="item-wechat" target="_top">
+                        <img src="https://img3.doubanio.com/f/accounts/1b6cc3ca91f78cf47f41eafa91fbcd4918ae239c/pics/connect_wechat.png" title="微信">
+                    </a>
+                    &nbsp;
+                    <a class="item-weibo" target="_top">
+                        <img src="https://img3.doubanio.com/f/accounts/e2f1d8c0ede93408b46cbbab4e613fb29ba94e35/pics/connect_sina_weibo.png" title="新浪微博">
+                    </a>
+                </div>
+              </form>
+            </div>
+            <ul id="side-nav" class="aside">
+                <li>
+                    >还没有豆瓣帐号?
+                    <a rel="nofollow" href="">立即注册</a>
+                </li>
+                <li>
+                    >
+                    <a rel="nofollow" href="">点击下载豆瓣移动应用</a>
+                </li>
+            </ul>
+        </div>
+        <div id="footer">
+            <span id="icp" class="fleft grey-link">© 2005－2017 douban.com, all rights reserved</span>
+            <span class="fright">
+
+                <a href="https://www.douban.com/about">关于豆瓣</a>
+                · <a href="https://www.douban.com/jobs">在豆瓣工作</a>
+                · <a href="https://www.douban.com/about?topic=contactus">联系我们</a>
+                · <a href="https://www.douban.com/about?policy=disclaimer">免责声明</a>
+
+                · <a href="https://www.douban.com/help/">帮助中心</a>
+                · <a href="https://developers.douban.com/" target="_blank">开发者</a>
+                · <a href="https://www.douban.com/mobile/">移动应用</a>
+                · <a href="https://www.douban.com/partner/">豆瓣广告</a>
+
+            </span>
+        </div>
+    </div>
+
+    <script>
+
+        function validateForm(e) {
+            alert('-----------'+e)
+            var email = e.elements.form_email
+            alert(email)
+            if(email){
+                var i = trim(email.value);
+                ""===i || "邮箱/手机号/用户名" === i?(displayError(email,"请输入正确的邮箱/用户名/手机号")):clearError(email);
+            }
+        }
+
+    </script>
+
+</body>
+</html>

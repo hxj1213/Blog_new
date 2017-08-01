@@ -102,8 +102,136 @@
     </div>
 <!-- 内容部分 -->
     <div id="wrapper">
-        <div id="content"></div>
-        <div class="footer"></div>
+        <div id="content">
+            <div class="article">
+                <div class="statuses">
+                    <div id="db-isay">
+                        <ul class="isay-links">
+                            <li class="isay-main active">
+                                <a data-action="main" href="javascript:void(0);">说句话</a>
+                            </li>
+                            <li class="isay-pic">
+                                <a data-action="pic" href="javascript:void(0);">发照片</a>
+                            </li>
+                            <li class="isay-share">
+                                <a data-action="share" href="javascript:void(0);">推荐网页</a>
+                            </li>
+                            <li class="notes-link">
+                                <a data-action="share" href="javascript:void(0);">写日记</a>
+                            </li>
+                            <li class="commodity-link">
+                                <a data-action="commodity" href="javascript:void(0)">发布东西</a>
+                            </li>
+                        </ul>
+                        <div class="item">
+                            <label id="isay-label" for="isay-cont">分享生活点滴...</label>
+                            <textarea data-minheight="70" tabindex="1" id="isay-cont" name="comment" rows="1"></textarea>
+                        </div>
+                        <div class="btn">
+                            <span id="isay-counter"></span>
+                            <span class="bn-submit bn-flat js-verify-account" data-is-verified="True" data-verify-url="https://www.douban.com/accounts/phone/verify"><input id="isay-submit" tabindex="1" value="发布" disabled="" type="submit"></span>
+                            <a target="_blank" href="https://www.douban.com/service/bookmarklet" class="lnk-share-tools" onclick="moreurl(this, {from:'index_rec'})">添加网页推荐工具</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="stream-items">
+                    <div class="statuses-wrapper">
+                        <div class="status-item">
+                            <div class="mod">
+                                <div class="hd">
+                                    <div class="usr-pic">
+                                        <a href=""><img src="images/u162566796-1.jpg"></a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="">三颗志</a>
+                                        的日记：
+                                    </div>
+                                </div>
+                                <div class="bd editor">
+                                    <div class="block note-block">
+                                        <div class="pic">
+                                            <div class="pic-wrap">
+                                                <a href=""><img src="images/p824243.jpg"></a>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <a href="">又想离异自强，又想王子灰姑娘，难免冲突成一片惨烈碎梦</a>
+                                            </div>
+                                            <p>1 亦舒写《我的前半生》，是1982年，香港。 亦舒自己，富贵人家出身，没吃过苦；笔下女子自然好强得简直势利；玛丽苏起来，也是无边无际。《我的前半生》原著，其实有些针对鲁迅先生《伤逝》：涓生与子君真成了夫...</p>
+                                        </div>
+                                    </div>
+                                    <div class="attachment"></div>
+                                    <div class="actions">
+                                        <span class="created_at" title="2017-07-31 12:00:07"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="paginator">
+                    <span class="prev">&lt;前页</span>
+                    <a href="" class="thispage">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                    <a href="">5</a>
+                    <a href="">6</a>
+                    <a href="">7</a>
+                    <a href="">8</a>
+                    <a href="">9</a>
+                    <span class="break">...</span>
+                    <span class="next">后页&gt;</span>
+                </div>
+            </div>
+            <div class="aside">
+                <div class="notify-mod" style="position: static;">
+
+
+                    <h2>
+                        豆瓣正在发生
+                        &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+                    </h2>
+
+                    <ul>
+                        <li>
+                            <a target="_blank" href="https://read.douban.com/competition/2017/" onclick="moreurl(this, {category:'read', type:'side_entry'})">第五届豆瓣阅读征文大赛正在进行</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://m.douban.com/page/nvh50av " onclick="moreurl(this, {category:'movie', type:'side_entry'})">第11届FIRST青年电影展</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+
+
+            <span id="icp" class="fleft gray-link">
+                © 2005－2017 douban.com, all rights reserved 北京豆网科技有限公司
+            </span>
+
+            <a href="" style="display: none;"></a>
+
+            <span class="fright">
+                <a href="">关于豆瓣</a>
+                ·
+                <a href="">在豆瓣工作</a>
+                ·
+                <a href="">联系我们</a>
+                ·
+                <a href="">免责声明</a>
+                ·
+                <a href="" target="_blank">帮助中心</a>
+                ·
+                <a href="">移动应用</a>
+                ·
+                <a href="">豆瓣广告</a>
+            </span>
+
+
+        </div>
     </div>
 
 </body>
